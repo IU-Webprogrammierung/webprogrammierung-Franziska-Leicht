@@ -28,3 +28,21 @@ a {
   border-radius: 50%; /* rundes Bild */
   float: right; /* ganz rechts */
 }
+
+.chip-container {
+  display: flex;          /* Chips nebeneinander */
+  flex-wrap: wrap;        /* Zeilenumbruch bei Platzmangel */
+  gap: 8px;               /* Abstand zwischen Chips */
+}
+
+.chip {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #B8CDBE;
+  color: #3E4E4D;
+  border-radius: 16px;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: default;
+  transition: background-color 0.2s;
+}
