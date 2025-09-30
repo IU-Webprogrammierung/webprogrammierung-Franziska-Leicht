@@ -20,3 +20,11 @@ ul,
 a {
     font-weight: 200;
 }
+
+.profile-picture {
+  width: 100px;      /* Startgröße */
+  max-width: 30vw;   /* passt sich Bildschirmbreite an */
+  height: auto;      /* Höhe proportional zur Breite */
+  border-radius: 50%; /* rundes Bild */
+  float: right; /* ganz rechts */
+}
