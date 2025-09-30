@@ -33,6 +33,7 @@ a {
   display: flex;          /* Chips nebeneinander */
   flex-wrap: wrap;        /* Zeilenumbruch bei Platzmangel */
   gap: 8px;               /* Abstand zwischen Chips */
+  padding: 0px;
 }
 
 .chip {
