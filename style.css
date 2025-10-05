@@ -46,3 +46,9 @@ a {
   font-weight: 400;
   white-space: nowrap;
 }
+
+.projects {
+  width: 1000px; /* Startgröße */
+  max-width: 80vw;  /* passt sich Bildschirmbreite an */
+  height: auto; /* Höhe proportional zur Breite */
+  }
