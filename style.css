@@ -21,6 +21,26 @@ a {
     font-weight: 200;
 }
 
+.navigation-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navigation-list li,
+.navigation-list a {
+  display: inline-block;
+  color: rgb(62, 78, 77);
+  background-color: unset;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.navigation-list a:hover {
+  color: #74a399;
+}
+
 .profile-picture {
   width: 100px;      /* Startgröße */
   max-width: 30vw;   /* passt sich Bildschirmbreite an */
