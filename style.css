@@ -299,6 +299,20 @@ footer p {
   background-color: rgb(220, 220, 220);
 }
 
+#skills .card-container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.card-outline {
+  flex: 1 1 350px;
+  width: 0;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #3e4e4d3e;
+}
+
 @media screen and (min-width: 1000px) {
   h1 {
     font-size: 80px;
