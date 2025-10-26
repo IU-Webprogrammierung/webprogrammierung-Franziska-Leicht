@@ -167,7 +167,7 @@ a {
   white-space: nowrap;
 }
 
-.show-projects-button {
+.button-outlined {
   display: inline-block;
   padding: 6px 12px;
   color: #3e4e4d;
@@ -177,9 +177,11 @@ a {
   text-decoration: none;
   border: 1px solid #3e4e4d;
   padding: 7px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.show-projects-button:hover {
+.button-outlined:hover {
   background-color: #3e4e4d;
   color: white;
 }
@@ -200,12 +202,12 @@ section {
 
 #hero {
   background-color: #74a39942;
-  padding: 120px 250px;
+  padding: 120px 250px 100px;
 }
 
 @media screen and (max-width: 1200px) {
   #hero {
-    padding: 40px 50px 60px;
+    padding: 40px 50px 40px;
   }
 
   section {
@@ -215,7 +217,7 @@ section {
 
 @media screen and (max-width: 500px) {
   #hero {
-    padding: 10px 10px 50px;
+    padding: 10px 10px 30px;
   }
 
   section {
@@ -239,6 +241,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border-radius: 12px;
   background-color: #d7d7d7;
   padding: 10px;
@@ -305,7 +308,7 @@ footer p {
   flex-wrap: wrap;
 }
 
-.card-outline {
+.card-outlined {
   flex: 1 1 350px;
   width: 0;
   padding: 12px;
