@@ -8,17 +8,17 @@ body {
 h1,
 h2,
 h3 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 h4 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 p,
 ul,
 a {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .navigation-list {
@@ -42,17 +42,25 @@ a {
 }
 
 .profile-picture {
-  width: 100px;      /* Startgröße */
-  max-width: 30vw;   /* passt sich Bildschirmbreite an */
-  height: auto;      /* Höhe proportional zur Breite */
-  border-radius: 50%; /* rundes Bild */
-  float: right; /* ganz rechts */
+  width: 100px;
+  /* Startgröße */
+  max-width: 30vw;
+  /* passt sich Bildschirmbreite an */
+  height: auto;
+  /* Höhe proportional zur Breite */
+  border-radius: 50%;
+  /* rundes Bild */
+  float: right;
+  /* ganz rechts */
 }
 
 .chip-container {
-  display: flex;          /* Chips nebeneinander */
-  flex-wrap: wrap;        /* Zeilenumbruch bei Platzmangel */
-  gap: 8px;               /* Abstand zwischen Chips */
+  display: flex;
+  /* Chips nebeneinander */
+  flex-wrap: wrap;
+  /* Zeilenumbruch bei Platzmangel */
+  gap: 8px;
+  /* Abstand zwischen Chips */
   padding: 0px;
 }
 
@@ -68,7 +76,10 @@ a {
 }
 
 .projects {
-  width: 1000px; /* Startgröße */
-  max-width: 80vw;  /* passt sich Bildschirmbreite an */
-  height: auto; /* Höhe proportional zur Breite */
-  }
+  width: 1000px;
+  /* Startgröße */
+  max-width: 80vw;
+  /* passt sich Bildschirmbreite an */
+  height: auto;
+  /* Höhe proportional zur Breite */
+}
