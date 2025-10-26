@@ -1,7 +1,13 @@
 body {
+  margin: 0px;
   background-color: rgb(236, 236, 236);
   color: rgb(62, 78, 77);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  margin: 8px;
+  padding-top: 80px;
 }
 
 /* Text Schriftgrößen */
@@ -21,24 +27,115 @@ a {
   font-weight: 200;
 }
 
+.titlebar {
+  background-color: #74a399aa;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  font-weight: 600;
+  padding: 6px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name {
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
 .navigation-list {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  flex-direction: row;
+  padding-right: 20px;
 }
 
 .navigation-list li,
 .navigation-list a {
+  font-weight: 300;
   display: inline-block;
   color: rgb(62, 78, 77);
   background-color: unset;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 300;
 }
 
 .navigation-list a:hover {
-  color: #74a399;
+  color: white;
+}
+
+#hamburger-menu {
+  display: none;
+  background-color: red;
+  outline: red;
+}
+
+.hamburger-open {
+  display: none;
+}
+
+.hamburger-close {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 6px;
+}
+
+.hamburger-icon {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 60px;
+  font-size: 12px;
+}
+
+#hamburger-menu:checked {
+  outline: 2px solid deeppink;
+}
+
+#hamburger-menu:checked~.navigation-list {
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  .hamburger-open {
+    display: block;
+  }
+
+  .hamburger-close {
+    display: none;
+  }
+
+  #hamburger-menu:checked~.hamburger-open {
+    display: none;
+  }
+
+
+  #hamburger-menu:checked~.hamburger-close {
+    display: block;
+  }
+
+  #hamburger-menu:checked~.header-name {
+    display: none;
+    background-color: red;
+  }
+
+  .navigation-list {
+    display: none;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 12px;
+  }
+
+  .navigation-list a {
+    color: black;
+    font-weight: 400;
+  }
+
 }
 
 .profile-picture {
