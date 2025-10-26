@@ -298,3 +298,21 @@ footer p {
   border-radius: 20px;
   background-color: rgb(220, 220, 220);
 }
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
