@@ -71,8 +71,6 @@ a {
 
 #hamburger-menu {
   display: none;
-  background-color: red;
-  outline: red;
 }
 
 .hamburger-open {
@@ -91,10 +89,6 @@ a {
   padding-bottom: 10px;
   width: 60px;
   font-size: 12px;
-}
-
-#hamburger-menu:checked {
-  outline: 2px solid deeppink;
 }
 
 #hamburger-menu:checked~.navigation-list {
@@ -147,8 +141,7 @@ a {
   /* Höhe proportional zur Breite */
   border-radius: 50%;
   /* rundes Bild */
-  float: right;
-  /* ganz rechts */
+
 }
 
 .chip-container {
@@ -159,6 +152,8 @@ a {
   gap: 8px;
   /* Abstand zwischen Chips */
   padding: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .chip {
@@ -199,16 +194,40 @@ a {
 }
 
 section {
-  padding: 8px 8px 50px 8px;
+  padding: 40px 100px 80px;
+  text-align: center;
 }
 
-#about {}
+#hero {
+  background-color: #74a39942;
+  padding: 120px 250px;
+}
+
+@media screen and (max-width: 1200px) {
+  #hero {
+    padding: 40px 50px 60px;
+  }
+
+  section {
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero {
+    padding: 10px 10px 50px;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
+
 
 #skills {
   background-color: #74a39928;
 }
 
-#projects {}
 
 .grid {
   display: grid;
@@ -238,7 +257,12 @@ section {
 
 footer {
   background-color: #74a39928;
-  padding: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-icon {
+  display: block;
 }
 
 footer a {
@@ -246,6 +270,11 @@ footer a {
   text-decoration: none;
   font-size: 22px;
 }
+
+footer a:hover {
+  color: #233725;
+}
+
 
 footer p {
   padding-top: 30px;
