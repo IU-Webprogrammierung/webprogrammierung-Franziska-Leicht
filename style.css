@@ -280,3 +280,21 @@ footer p {
   padding-top: 30px;
   margin: 0px;
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  padding: 12px;
+  border-radius: 20px;
+  background-color: rgb(220, 220, 220);
+}
