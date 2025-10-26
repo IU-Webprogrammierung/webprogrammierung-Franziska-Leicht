@@ -163,13 +163,30 @@ a {
 
 .chip {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 7px 15px;
   background-color: #B8CDBE;
   color: #3E4E4D;
   border-radius: 16px;
   font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
+}
+
+.show-projects-button {
+  display: inline-block;
+  padding: 6px 12px;
+  color: #3e4e4d;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  border: 1px solid #3e4e4d;
+  padding: 7px 15px;
+}
+
+.show-projects-button:hover {
+  background-color: #3e4e4d;
+  color: white;
 }
 
 .projects {
