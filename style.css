@@ -192,10 +192,6 @@ section {
 
 #projects {}
 
-#contact {
-  background-color: #74a39928;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -220,4 +216,20 @@ section {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+footer {
+  background-color: #74a39928;
+  padding: 8px;
+}
+
+footer a {
+  color: #3e4e4d;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+footer p {
+  padding-top: 30px;
+  margin: 0px;
 }
