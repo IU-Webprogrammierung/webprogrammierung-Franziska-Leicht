@@ -340,7 +340,7 @@ p {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   h3 {
@@ -376,6 +376,7 @@ p {
   padding: 12px;
   border-radius: 12px;
   height: 180px;
+  align-content: center;
 }
 
 
