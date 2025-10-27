@@ -39,6 +39,7 @@ a {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 8px 24px rgba(149, 149, 149, 0.2);
+  z-index: 1;
 }
 
 .header-name {
@@ -332,4 +333,65 @@ footer p {
   p {
     font-size: 18px;
   }
+}
+
+#timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.timeline-card {
+  flex: 1 1 100px;
+  border-radius: 12px;
+  background-color: #dcdcdc;
+  padding: 7px 15px;
+  padding: 12px;
+  border-radius: 12px;
+  height: 140px;
+}
+
+.timeline-icon {
+  color: #3e4e4d;
+  font-size: 32px;
+  height: 60px;
+  width: 60px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-year {
+  color: rgb(18, 72, 26);
+}
+
+.timeline-left {
+  flex: 0;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-left::before {
+  position: absolute;
+  content: '';
+  height: 180px;
+  width: 2px;
+  background-color: #dcdcdc;
+  z-index: -1;
 }
