@@ -46,6 +46,7 @@ a {
   font-weight: 600;
   font-size: 16px;
   padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .navigation-list {
@@ -317,13 +318,29 @@ footer p {
   border: 2px solid #3e4e4d3e;
 }
 
-@media screen and (min-width: 1000px) {
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
   h1 {
-    font-size: 80px;
+    font-size: 50px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 20px;
   }
 
   h3 {
@@ -358,8 +375,9 @@ footer p {
   padding: 7px 15px;
   padding: 12px;
   border-radius: 12px;
-  height: 140px;
+  height: 180px;
 }
+
 
 .timeline-icon {
   color: #3e4e4d;
@@ -390,7 +408,7 @@ footer p {
 .timeline-left::before {
   position: absolute;
   content: '';
-  height: 180px;
+  height: 220px;
   width: 2px;
   background-color: #dcdcdc;
   z-index: -1;
