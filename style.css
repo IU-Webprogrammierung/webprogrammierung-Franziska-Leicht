@@ -352,14 +352,14 @@ p {
   }
 }
 
-#timeline {
+.timeline-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-bottom: 40px;
+  padding: 0px 0px 40px 0px;
 }
 
-.timeline-container {
+.timeline-list-item {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -397,16 +397,7 @@ p {
   color: rgb(18, 72, 26);
 }
 
-.timeline-left {
-  flex: 0;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.timeline-left::before {
+.timeline-icon::before {
   position: absolute;
   content: '';
   height: 220px;
