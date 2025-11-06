@@ -27,7 +27,7 @@ a {
 }
 
 .titlebar {
-  background-color: #3E4E4D;
+  background-color: rgba(62, 78, 77, 0.90);
   color: rgb(236, 236, 236);
   position: fixed;
   top: 0px;
