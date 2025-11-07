@@ -62,7 +62,8 @@ body {
   li {
     font-weight: 200;
     display: inline-block;
-    list-style: none; /* optional, damit kein Bullet angezeigt wird */
+    list-style: none;
+    /* optional, damit kein Bullet angezeigt wird */
   }
 
   a {
@@ -84,19 +85,19 @@ body {
   display: none;
 
   &:checked {
-    ~ .navigation-list {
+    ~.navigation-list {
       display: flex;
     }
 
-    ~ .hamburger-open {
+    ~.hamburger-open {
       display: none;
     }
 
-    ~ .hamburger-close {
+    ~.hamburger-close {
       display: block;
     }
 
-    ~ .header-name {
+    ~.header-name {
       display: none;
       background-color: red;
     }
@@ -160,8 +161,10 @@ body {
 
 .chip-container {
   display: flex;
-  flex-wrap: wrap; /* Zeilenumbruch bei Platzmangel */
-  gap: 8px; /* Abstand zwischen Chips */
+  flex-wrap: wrap;
+  /* Zeilenumbruch bei Platzmangel */
+  gap: 8px;
+  /* Abstand zwischen Chips */
   padding: 0;
   justify-content: center;
   align-items: center;
@@ -408,4 +411,38 @@ p {
       color: rgb(62, 78, 77);
     }
   }
+}
+
+#scroll-to-top {
+  background-color: red;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(62, 78, 77, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  /* für Icon zentrieren */
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  /* unsichtbar und nicht klickbar */
+}
+
+#scroll-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#scroll-to-top:hover {
+  background-color: #3e4e4d;
+  transform: scale(1.1);
 }
