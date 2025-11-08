@@ -5,40 +5,46 @@
   --text-color-dim: rgb(236, 236, 236);
   --card-color: rgb(220, 220, 220);
   --chip-color: rgb(89, 110, 109);
-  --button-color: rgb(62, 78, 77);
+  --button-color: rgb(73, 99, 97);
+  --button-text-hover-color: white;
 
-  --hero-color: rgba(116, 163, 153, 0.259);
-  --section-alt-color: rgba(116, 163, 153, 0.157);
+  --hero-color: rgb(205, 217, 215);
+  --section-alt-color: rgb(216, 231, 227);
 
-  --titlebar-color: rgba(62, 78, 77, 0.90);
-  --scroll-button-color: rgba(62, 78, 77, 0.9);
-  --card-border-color: rgba(62, 78, 77, 0.243);
+  --card-border-color: rgba(62, 78, 77);
 
+  --titlebar-color: rgb(79, 93, 92);
   --titlebar-shadow-color: rgba(149, 149, 149, 0.2);
 
   --footer-icon-hover: rgb(35, 55, 37);
+
+  --scroll-button-color: rgba(62, 78, 77);
+  --scroll-button-hover-color: rgb(96, 113, 112);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --page-background: rgb(38, 36, 36);
 
-    --text-color: rgb(43, 41, 41);
+    --text-color: rgb(255, 255, 255);
     --text-color-dim: rgb(241, 241, 241);
-    --card-color: rgb(70, 68, 68);
-    --chip-color: rgb(62, 122, 119);
-    --button-color: rgb(228, 236, 236);
+    --card-color: rgb(42, 64, 59);
+    --chip-color: rgb(107, 106, 106);
+    --button-color: rgb(236, 232, 228);
+    --button-text-hover-color: rgb(57, 57, 57);
 
-    --hero-color: rgba(64, 120, 108, 0.259);
-    --section-alt-color: rgba(16, 137, 111, 0.157);
+    --hero-color: rgb(45, 57, 54);
+    --section-alt-color: rgb(42, 64, 59);
 
-    --titlebar-color: rgba(76, 118, 114, 0.9);
-    --scroll-button-color: rgba(76, 118, 114, 0.9);
-    --card-border-color: rgba(250, 252, 252, 0.243);
+    --card-border-color: rgba(250, 252, 252);
 
+    --titlebar-color: rgb(72, 109, 106);
     --titlebar-shadow-color: rgba(68, 66, 66, 0.2);
 
-    --footer-icon-hover: rgb(207, 211, 209);
+    --footer-icon-hover: rgb(207, 203, 203);
+
+    --scroll-button-color: rgb(72, 109, 106);
+    --scroll-button-hover-color: rgb(108, 150, 146);
   }
 }
 
@@ -238,7 +244,7 @@ body {
 
   &:hover {
     background-color: var(--button-color);
-    color: var(--text-color);
+    color: var(--button-text-hover-color);
   }
 }
 
@@ -485,6 +491,6 @@ p {
 }
 
 #scroll-to-top:hover {
-  background-color: #3e4e4d;
+  background-color: var(--scroll-button-hover-color);
   transform: scale(1.1);
 }
