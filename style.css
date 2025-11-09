@@ -1,57 +1,41 @@
 :root {
-    --page-background: rgb(236, 236, 236);
+    --primary-page-background-color: rgb(216, 231, 227);
+    --secondary-page-background-color: rgb(236, 236, 236);
 
     --text-color: white;
-    --text-color-dim: rgb(236, 236, 236);
-    --card-color: rgb(220, 220, 220);
-    --chip-color: rgb(89, 110, 109);
-    --button-color: rgb(73, 99, 97);
-    --button-text-hover-color: white;
+    --text-color-dimmed: rgb(236, 236, 236);
 
-    --hero-color: rgb(205, 217, 215);
-    --section-alt-color: rgb(216, 231, 227);
+    --card-background-color: rgb(220, 220, 220);
+    --chip-background-color: rgb(89, 110, 109);
 
-    --card-border-color: rgba(62, 78, 77);
+    --primary-color: rgb(73, 99, 97);
+    --primary-hover-color: rgb(96, 113, 112);
 
-    --titlebar-color: rgb(79, 93, 92);
-    --titlebar-shadow-color: rgba(149, 149, 149, 0.2);
-
-    --footer-icon-hover: rgb(35, 55, 37);
-
-    --scroll-button-color: rgba(62, 78, 77);
-    --scroll-button-hover-color: rgb(96, 113, 112);
+    --shadow-color: rgba(149, 149, 149, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --page-background: rgb(38, 36, 36);
+        --primary-page-background-color: rgb(42, 64, 59);
+        --secondary-page-background-color: rgb(38, 36, 36);
 
         --text-color: rgb(255, 255, 255);
-        --text-color-dim: rgb(241, 241, 241);
-        --card-color: rgb(42, 64, 59);
-        --chip-color: rgb(107, 106, 106);
-        --button-color: rgb(236, 232, 228);
-        --button-text-hover-color: rgb(57, 57, 57);
+        --text-color-dimmed: rgb(241, 241, 241);
 
-        --hero-color: rgb(45, 57, 54);
-        --section-alt-color: rgb(42, 64, 59);
+        --card-background-color: rgb(42, 64, 59);
+        --chip-background-color: rgb(39, 46, 46);
 
-        --card-border-color: rgba(250, 252, 252);
+        --primary-color: rgb(236, 232, 228);
+        --primary-hover-color: rgb(108, 150, 146);
 
-        --titlebar-color: rgb(72, 109, 106);
-        --titlebar-shadow-color: rgba(68, 66, 66, 0.2);
-
-        --footer-icon-hover: rgb(207, 203, 203);
-
-        --scroll-button-color: rgb(72, 109, 106);
-        --scroll-button-hover-color: rgb(108, 150, 146);
+        --shadow-color: rgba(68, 66, 66, 0.2);
     }
 }
 
 body {
     margin: 0;
-    background-color: var(--page-background);
-    color: var(--button-color);
+    background-color: var(--secondary-page-background-color);
+    color: var(--primary-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     main {
@@ -79,8 +63,8 @@ body {
 
 
 .titlebar {
-    background-color: var(--titlebar-color);
-    color: var(--text-color-dim);
+    background-color: var(--chip-background-color);
+    color: var(--text-color-dimmed);
     position: fixed;
     top: 0;
     left: 0;
@@ -91,7 +75,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 8px 24px var(--titlebar-shadow-color);
+    box-shadow: 0 8px 24px var(--shadow-color);
     z-index: 1;
 }
 
@@ -104,7 +88,7 @@ body {
 
 .navigation-list {
     display: flex;
-    color: var(--text-color-dim);
+    color: var(--text-color-dimmed);
     gap: 20px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -120,7 +104,7 @@ body {
     a {
         font-weight: 200;
         display: inline-block;
-        color: var(--text-color-dim);
+        color: var(--text-color-dimmed);
         background-color: unset;
         text-decoration: none;
         text-transform: uppercase;
@@ -163,7 +147,7 @@ body {
     position: fixed;
     top: 10px;
     right: 6px;
-    color: var(--text-color-dim);
+    color: var(--text-color-dimmed);
 }
 
 .hamburger-icon {
@@ -171,7 +155,7 @@ body {
     padding-bottom: 10px;
     width: 60px;
     font-size: 12px;
-    color: var(--text-color-dim);
+    color: var(--text-color-dimmed);
 }
 
 @media screen and (max-width: 640px) {
@@ -190,7 +174,7 @@ body {
         border-radius: 12px;
 
         a {
-            color: var(--text-color-dim);
+            color: var(--text-color-dimmed);
             font-weight: 300;
         }
     }
@@ -222,8 +206,8 @@ body {
     .chip {
         display: inline-block;
         padding: 7px 15px;
-        background-color: var(--chip-color);
-        color: var(--text-color-dim);
+        background-color: var(--chip-background-color);
+        color: var(--text-color);
         border-radius: 16px;
         font-size: 14px;
         font-weight: 400;
@@ -234,18 +218,18 @@ body {
 .button-outlined {
     display: inline-block;
     padding: 7px 15px;
-    color: var(--button-color);
+    color: var(--primary-color);
     border-radius: 50px;
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
-    border: 1px solid var(--button-color);
+    border: 1px solid var(--primary-color);
     margin-top: 15px;
     margin-bottom: 15px;
 
     &:hover {
-        background-color: var(--button-color);
-        color: var(--button-text-hover-color);
+        background-color: var(--primary-color);
+        color: var(--secondary-page-background-color);
     }
 }
 
@@ -265,7 +249,7 @@ section {
 }
 
 #hero {
-    background-color: var(--hero-color);
+    background-color: var(--primary-page-background-color);
     padding: 120px 250px 100px;
 }
 
@@ -290,7 +274,7 @@ section {
 }
 
 #skills {
-    background-color: var(--section-alt-color);
+    background-color: var(--primary-page-background-color);
 }
 
 .grid {
@@ -304,7 +288,7 @@ section {
         align-items: center;
         justify-content: space-between;
         border-radius: 12px;
-        background-color: var(--card-color);
+        background-color: var(--card-background-color);
         padding: 10px;
 
         img {
@@ -321,7 +305,7 @@ section {
 }
 
 footer {
-    background-color: var(--section-alt-color);
+    background-color: var(--primary-page-background-color);
     padding: 20px;
     text-align: center;
 
@@ -330,12 +314,12 @@ footer {
     }
 
     a {
-        color: var(--button-color);
+        color: var(--primary-color);
         text-decoration: none;
         font-size: 22px;
 
         &:hover {
-            color: var(--footer-icon-hover);
+            color: var(--primary-hover-color);
         }
     }
 
@@ -361,7 +345,7 @@ footer {
 .card {
     padding: 12px;
     border-radius: 20px;
-    background-color: var(--card-color);
+    background-color: var(--card-background-color);
 }
 
 #skills .card-container {
@@ -375,7 +359,7 @@ footer {
     width: 0;
     padding: 12px;
     border-radius: 12px;
-    border: 2px solid var(--card-border-color);
+    border: 2px solid var(--chip-background-color);
 }
 
 h1 {
@@ -429,18 +413,18 @@ p {
         .timeline-card {
             flex: 1 1 100px;
             border-radius: 12px;
-            background-color: var(--card-color);
+            background-color: var(--card-background-color);
             padding: 12px;
             height: 180px;
             align-content: center;
         }
 
         .timeline-icon {
-            color: var(--button-color);
+            color: var(--primary-color);
             font-size: 32px;
             height: 60px;
             width: 60px;
-            background-color: var(--card-color);
+            background-color: var(--card-background-color);
             border-radius: 50%;
             flex: none;
             display: flex;
@@ -452,13 +436,13 @@ p {
                 content: '';
                 height: 220px;
                 width: 2px;
-                background-color: var(--card-color);
+                background-color: var(--card-background-color);
                 z-index: -1;
             }
         }
 
         .timeline-year {
-            color: var(--button-color);
+            color: var(--primary-color);
         }
     }
 }
@@ -469,8 +453,8 @@ p {
     right: 10px;
     width: 50px;
     height: 50px;
-    background-color: var(--scroll-button-color);
-    color: var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-page-background-color);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -492,6 +476,6 @@ p {
 }
 
 #scroll-to-top:hover {
-    background-color: var(--scroll-button-hover-color);
+    background-color: var(--primary-hover-color);
     transform: scale(1.1);
 }
