@@ -4,8 +4,6 @@
 Dieses Projekt entstand im Rahmen des Moduls **Web-Programmierung** im Bachelorstudiengang **UX Design** an der IU Internationalen Hochschule.  
 Ziel war die Erstellung einer **Onepager-Portfolio-Website**, die meine bisherigen Studienprojekte und Kenntnisse präsentiert und zugleich aktuelle Webstandards, Accessibility-Standards (WCAG/WAI-ARIA) sowie responsive Gestaltung berücksichtigt.
 
----
-
 ## Ziele
 - Entwicklung einer **modernen, barrierefreien Portfolio-Website**
 - Umsetzung eines **klar strukturierten Onepagers** mit responsivem Layout
@@ -13,7 +11,24 @@ Ziel war die Erstellung einer **Onepager-Portfolio-Website**, die meine bisherig
 - Anwendung von **aktuellen HTML-, CSS- und Accessibility-Standards**
 - Technisch saubere und nachvollziehbare Projektstruktur mit Git-Versionierung
 
----
+## Informationsarchitektur
+
+Die Portfolio-Website ist als **Onepager** konzipiert und folgt einer klaren, linearen Struktur.  
+Alle Inhalte sind über die Hauptnavigation erreichbar, die als Sticky Header fixiert ist.
+
+**Hauptbereiche der Seite:**
+1. **Hero** – Einstieg mit Name, Claim, Profilbild und zentralem Call-to-Action  
+2. **Über mich** – Kurzvorstellung, Motivation, persönliche Einblicke  
+3. **Timeline** – Berufserfahrung und Bildung als visuelle Zeitachse  
+4. **Kenntnisse (Skills)** – Übersicht zu UX-, Tech- und Soft Skills in strukturierter Kartenform  
+5. **Projekte (Portfolio)** – Präsentation der Studien- und Praxisprojekte mit Bildern und externen Links zu Prototypen  
+6. **Kontakt (Footer)** – Kontaktmöglichkeiten und Social Links
+
+**Globale Navigation:**
+- Über mich  
+- Kenntnisse  
+- Portfolio  
+- Kontakt  
 
 ## Technologien und Methoden
 
@@ -58,15 +73,14 @@ Ziel war die Erstellung einer **Onepager-Portfolio-Website**, die meine bisherig
   - **Alt-Texte** für alle Bilder (inhaltlich beschreibend, nicht redundant)
   - **aria-hidden="true"** bei rein dekorativen Icons
   - **Farben mit AA-Kontrastwerten** geprüft (Lighthouse-Test)
-  - **Keyboard-freundliche Navigation**
   - **Visuell klarer Fokuszustand** durch Hover-Effekte und klare Hierarchie
-- **Visually Hidden Utility Class** (CSS) vorgesehen für Screenreader-Only Content
 
 ---
 
 ### 🧾 Git-Workflow
 - Repository auf GitHub:  
   [`IU-Webprogrammierung/webprogrammierung-Franziska-Leicht`](https://github.com/IU-Webprogrammierung/webprogrammierung-Franziska-Leicht)
+- Regelmäßige Commits zur Nachvollziehbarkeit und Commit Messages nach Conventional Commits Standard 
 
 ---
 
@@ -81,8 +95,12 @@ Ziel war die Erstellung einer **Onepager-Portfolio-Website**, die meine bisherig
 - Bedeutung von **semantischem HTML und ARIA** für Barrierefreiheit
 - **Erfahrung mit Git-Workflows** und konventionellem Commit-Stil
 - Erweiterung des Verständnisses für **strukturierte UX-Portfolios**
-- **Dark Mode-Implementierung** als UX-Optimierung und technische Herausforderung
 
 ---
+
+### Ausblick
+- Geplanter Ausbau der Accessibility (AAA-Level)
+- Eventuell Integration eines Dark Mode Toggles
+- Hosten einer eigenen Domain für meine Website
 
 © 2025 Franziska Leicht – IU Internationale Hochschule | Modul Web-Programmierung
