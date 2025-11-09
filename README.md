@@ -7,7 +7,7 @@ Ziel war die Erstellung einer **Onepager-Portfolio-Website**, die meine bisherig
 ## Ziele
 - Entwicklung einer **modernen, barrierefreien Portfolio-Website**
 - Umsetzung eines **klar strukturierten Onepagers** mit responsivem Layout
-- Integration meiner **UX-, UI-, und eCommerce-Projekte**
+- Integration meiner **Uni-Projekte**
 - Anwendung von **aktuellen HTML-, CSS- und Accessibility-Standards**
 - Technisch saubere und nachvollziehbare Projektstruktur mit Git-Versionierung
 
@@ -89,7 +89,7 @@ Alle Inhalte sind über die Hauptnavigation erreichbar, die als Sticky Header fi
 
 ---
 
-### 📚 Erkenntnisse & Learnings
+## 📚 Erkenntnisse & Learnings
 - Vertieftes Verständnis von **responsivem Design** und **Flex/Grid-Architekturen**
 - Praxisnahe Anwendung von **WCAG 2.1 Richtlinien**
 - Bedeutung von **semantischem HTML und ARIA** für Barrierefreiheit
@@ -98,7 +98,7 @@ Alle Inhalte sind über die Hauptnavigation erreichbar, die als Sticky Header fi
 
 ---
 
-### Ausblick
+## Ausblick
 - Geplanter Ausbau der Accessibility (AAA-Level)
 - Eventuell Integration eines Dark Mode Toggles
 - Hosten einer eigenen Domain für meine Website
