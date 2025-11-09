@@ -71,7 +71,7 @@ Alle Inhalte sind über die Hauptnavigation erreichbar, die als Sticky Header fi
 ### ⚙️ Interaktion & JavaScript
 
 - **Hamburger-Menü** (ohne Framework, via Checkbox-Interaktion)
-- **Scroll-to-Top Button** (`scrollToTop.js`) mit sanfter Animation
+- **Scroll-to-Top Button** (`script.js`) mit sanfter Animation
 - Externe Projekt-Links öffnen in neuen Tabs (`target="_blank"`, `rel="noopener noreferrer"`)
 - Buttons mit `role="button"` für Screenreader-Unterstützung
 

@@ -1,4 +1,4 @@
-// scrollToTop.js
+/* Scroll To Top Button */
 const scrollButton = document.getElementById('scroll-to-top');
 
 // Button einblenden, wenn nach unten gescrollt
@@ -16,3 +16,12 @@ scrollButton.addEventListener('click', () => {
         top: 0, behavior: 'smooth'
     });
 });
+
+/* Navigation Bar */
+const hamburger = document.getElementById('hamburger-menu');
+document.querySelectorAll('.navigation-list li a')
+    .forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.checked = false; // close the menu
+        });
+    });
