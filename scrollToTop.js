@@ -13,7 +13,6 @@ window.addEventListener('scroll', () => {
 // Beim Klicken smooth nach oben scrollen
 scrollButton.addEventListener('click', () => {
     window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+        top: 0, behavior: 'smooth'
     });
 });
