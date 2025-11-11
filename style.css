@@ -189,7 +189,7 @@ body {
     /* rundes Bild */
     transition: transform 0.4s ease;
     border-radius: 30% 70% 55% 45% / 30% 30% 70% 70%;
-    filter: saturate(130%) brightness(1.2);
+    filter: saturate(120%) brightness(1.2);
 }
 .profile-picture:hover {
     transform: translateY(-7px) rotate(1deg);
@@ -312,21 +312,23 @@ footer {
     text-align: center;
 
     .footer-icon {
-        display: block;
+        display: inline-block;
     }
 
     a {
         color: var(--primary-color);
         text-decoration: none;
         font-size: 22px;
+        transition: transform 0.3s ease, color 0.3s ease;
 
         &:hover {
             color: var(--primary-hover-color);
+            transform: scale(1.2);
         }
     }
 
     p {
-        padding-top: 30px;
+        padding-top: 20px;
         margin: 0;
     }
 }
