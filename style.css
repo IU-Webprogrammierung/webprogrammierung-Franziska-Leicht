@@ -182,15 +182,17 @@ body {
 
 
 .profile-picture {
-    width: 100px;
-    /* Startgröße */
-    max-width: 30vw;
-    /* passt sich Bildschirmbreite an */
+    width: clamp(150px, 15vw, 300px);
     height: auto;
     /* Höhe proportional zur Breite */
-    border-radius: 50%;
+    border-radius: 20%;
     /* rundes Bild */
-
+    transition: transform 0.4s ease;
+    border-radius: 30% 70% 55% 45% / 30% 30% 70% 70%;
+    filter: saturate(130%) brightness(1.2);
+}
+.profile-picture:hover {
+    transform: translateY(-7px) rotate(1deg);
 }
 
 .chip-container {
