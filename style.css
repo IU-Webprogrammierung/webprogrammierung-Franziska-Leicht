@@ -37,6 +37,7 @@ body {
     background-color: var(--secondary-page-background-color);
     color: var(--primary-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
 
     main {
         padding-top: 60px;
@@ -193,6 +194,17 @@ body {
 }
 .profile-picture:hover {
     transform: translateY(-7px) rotate(1deg);
+}
+
+#about {
+    padding-bottom: 60px;
+
+    p {
+        max-width: 60ch;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
 }
 
 .chip-container {
