@@ -1,4 +1,12 @@
+/*
+Device Sizes
+- desktop size is bigger or equal to 1200px
+- table is smaller than 1200px
+- phone is smaller than 500px
+*/
+
 :root {
+    /*Colors*/
     --primary-page-background-color: rgb(216, 231, 227);
     --secondary-page-background-color: rgb(236, 236, 236);
 
@@ -64,7 +72,7 @@ body {
 
 
 .titlebar {
-    background-color: rgba(1,1,1,0.6);
+    background-color: rgba(1, 1, 1, 0.6);
     backdrop-filter: blur(20px);
     color: var(--text-color-dimmed);
     position: fixed;
@@ -159,7 +167,8 @@ body {
     color: var(--text-color-dimmed);
 }
 
-@media screen and (max-width: 640px) {
+/*phone*/
+@media screen and (max-width: 500px) {
     .hamburger-open {
         display: block;
     }
@@ -192,6 +201,7 @@ body {
     border-radius: 30% 70% 55% 45% / 30% 30% 70% 70%;
     filter: saturate(120%) brightness(1.2);
 }
+
 .profile-picture:hover {
     transform: translateY(-7px) rotate(1deg);
 }
@@ -258,7 +268,7 @@ body {
 }
 
 section {
-    padding: 40px 100px 80px;
+    padding: 40px 12% 80px;
     text-align: center;
 }
 
@@ -267,6 +277,7 @@ section {
     padding: 120px 250px 100px;
 }
 
+/*tablet*/
 @media screen and (max-width: 1200px) {
     #hero {
         padding: 40px 50px 40px;
@@ -277,9 +288,10 @@ section {
     }
 }
 
+/*phone*/
 @media screen and (max-width: 500px) {
     #hero {
-        padding: 10px 10px 30px;
+        padding: 50px 10px 30px;
     }
 
     section {
@@ -312,7 +324,8 @@ section {
     }
 }
 
-@media screen and (max-width: 800px) {
+/*phone*/
+@media screen and (max-width: 500px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -394,9 +407,10 @@ p {
     font-size: 18px;
 }
 
-@media screen and (max-width: 1000px) {
+/*tablet*/
+@media screen and (max-width: 1200px) {
     h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     h2 {
@@ -431,7 +445,7 @@ p {
             border-radius: 12px;
             background-color: var(--card-background-color);
             padding: 12px;
-            height: 180px;
+            height: 210px;
             align-content: center;
         }
 
@@ -450,7 +464,7 @@ p {
             &::before {
                 position: absolute;
                 content: '';
-                height: 220px;
+                height: 250px;
                 width: 2px;
                 background-color: var(--card-background-color);
                 z-index: -1;
@@ -469,7 +483,7 @@ p {
     right: 10px;
     width: 50px;
     height: 50px;
-    background-color: rgba(1,1,1,0.6);
+    background-color: rgba(1, 1, 1, 0.6);
     backdrop-filter: blur(10px);
     color: var(--text-color-dimmed);
     border: none;
