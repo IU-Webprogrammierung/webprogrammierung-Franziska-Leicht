@@ -315,34 +315,6 @@ section {
     background-blend-mode: color;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
-
-    article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 12px;
-        background-color: var(--card-background-color);
-        padding: 10px;
-
-        img {
-            width: 100%;
-            border-radius: 6px;
-        }
-    }
-}
-
-/*phone*/
-@media screen and (max-width: 640px) {
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 footer {
     margin-top: 60px;
     background-color: var(--primary-page-background-color);
@@ -569,5 +541,96 @@ p {
 
     .author {
         color: var(--text-color);
+    }
+}
+
+.flipcard-container {
+    display: grid;
+    gap: 20px 14px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*phone*/
+@media screen and (max-width: 640px) {
+    .flipcard-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.flipcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: var(--card-background-color);
+    padding: 10px;
+
+    img {
+        border-radius: 6px;
+        width: 100%;
+
+        &:hover {
+            filter: brightness(0.92);
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    .flip-text {
+        text-align: left;
+        padding: 0 30px;
+    }
+
+    .flip-button {
+        font-size: 24px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        color: var(--primary-color);
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        &:hover {
+            color: var(--primary-hover-color);
+        }
+    }
+
+    .frontside {
+        cursor: pointer;
+        transition: all 1.0s ease;
+        opacity: 1;
+    }
+
+    .backside {
+        transition: all 1.0s ease;
+        opacity: 0;
+        inset: 0;
+        position: absolute;
+    }
+
+    input:checked {
+        ~ .flip-button {
+            transform: rotate(45deg);
+        }
+
+        ~ .flip-text {
+            display: inline;
+        }
+
+        ~ .frontside {
+            opacity: 0;
+            position: absolute;
+            inset: 0;
+        }
+
+        ~ .backside {
+            opacity: 1;
+            position: unset;
+        }
     }
 }
