@@ -523,3 +523,45 @@ p {
     background-color: var(--primary-hover-color);
     transform: scale(1.1);
 }
+
+.sticky-headline {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.sticky-board {
+    margin-bottom: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.sticky-note {
+    flex: 1 1 250px;
+    width: 0;
+    border: 2px solid var(--chip-background-color);
+
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--chip-background-color);
+    box-shadow: 0 8px 24px var(--shadow-color);
+
+    .type {
+        color: var(--text-color);
+        font-weight: lighter;
+    }
+
+    .cite {
+        font-weight: lighter;
+        font-size: 18px;
+        font-style: italic;
+        color: var(--text-color-dimmed);
+    }
+
+    .author {
+        color: var(--text-color);
+    }
+}
