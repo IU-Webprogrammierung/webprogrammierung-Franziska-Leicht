@@ -58,7 +58,7 @@ Alle Inhalte sind über die Hauptnavigation erreichbar, die als Sticky Header fi
 ### 🎨 Design und Styles
 
 - **CSS Nesting** zur modernen Verschachtelung
-- **Font Awesome** (CDN) für Icon-Darstellung
+- **Font Awesome** für Icon-Darstellung
 - Einsatz von **CSS Custom Properties (Variablen)** zur globalen Farbanpassung
 - **Dark Mode**-Unterstützung über `@media (prefers-color-scheme: dark)`
 - **Hover-Effekte** für Buttons, Navigation und Icons
