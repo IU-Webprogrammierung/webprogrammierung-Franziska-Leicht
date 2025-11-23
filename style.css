@@ -333,6 +333,7 @@ section {
 }
 
 footer {
+    margin-top: 60px;
     background-color: var(--primary-page-background-color);
     padding: 20px;
     text-align: center;
