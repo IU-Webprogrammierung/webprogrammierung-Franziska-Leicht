@@ -89,6 +89,12 @@ body {
     font-size: 16px;
     padding-left: 10px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color-dimmed);
+
+    &:hover {
+        color: var(--text-color);
+    }
 }
 
 .navigation-list {
