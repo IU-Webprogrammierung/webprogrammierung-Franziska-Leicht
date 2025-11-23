@@ -14,35 +14,13 @@
     <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
     <link href="fontawesome/css/brands.min.css" rel="stylesheet"/>
     <link href="fontawesome/css/solid.min.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+    <script defer src="scripts/components.js"></script>
 </head>
 
 <body>
-<!-- Header mit Logo und Navigation -->
-<header>
-    <nav aria-label="Hauptnavigation" class="titlebar">
-        <input id="hamburger-menu" type="checkbox">
-        <a aria-label="Zurück zu unserer Hauptnavigation"
-           href="./"
-           rel="noopener noreferrer"
-           class="header-name"
-        >
-            Franziska Leicht
-        </a>
 
-        <label aria-label="Menü öffnen" class="hamburger-open hamburger-icon" for="hamburger-menu">
-            <i aria-hidden="true" class="fa-solid fa-bars fa-2x"></i>
-        </label>
-        <label aria-label="Menü schließen" class="hamburger-close hamburger-icon" for="hamburger-menu">
-            <i aria-hidden="true" class="fa-solid fa-x fa-2x"></i>
-        </label>
-        <ul class="navigation-list">
-            <li><a href="#about">Über mich</a></li>
-            <li><a href="#skills">Kenntnisse</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
+<titlebar-component></titlebar-component>
 
 <main>
     <!-- Hero -->
@@ -219,14 +197,14 @@
                 <a aria-label="Mehr zum Projekt Web-Design erfahren"
                    rel="noopener noreferrer"
                    target="_blank"
-                   href="https://www.figma.com/proto/dkuYg7ATOlFAbKOZ7fmXpZ/Website-Tannen-Retreat?page-id=607%3A1754&type=design&node-id=607-1755&viewport=-424%2C151%2C0.41&t=RJrQ4O4R2bvrQLxZ-1&scaling=scale-down&starting-point-node-id=607%3A1755"
+                   href="./project.html"
                 >
                     <img alt="Mockup der Website 'Tannen Retreat' zum Thema Tannenduft und Teegenuss"
                          class="projects" src="images/Web Design Website Klickdummy.webp">
                 </a>
                 <a aria-label="Mehr zum Projekt Web-Design erfahren"
                    class="button-outlined"
-                   href="https://www.figma.com/proto/dkuYg7ATOlFAbKOZ7fmXpZ/Website-Tannen-Retreat?page-id=607%3A1754&type=design&node-id=607-1755&viewport=-424%2C151%2C0.41&t=RJrQ4O4R2bvrQLxZ-1&scaling=scale-down&starting-point-node-id=607%3A1755"
+                   href="./project.html"
                    rel="noopener noreferrer"
                    target="_blank">Mehr
                     erfahren</a>
@@ -321,62 +299,12 @@
 
 </main>
 
-<!-- Footer -->
-<footer id="contact">
-    <!-- Kontakt -->
-    <h2>Lust auf ein neues Projekt?</h2>
-    <h3>Ich freue mich über neue Kontakte, spannende UX Projekte oder eine kurze Nachricht von dir 👋</h3>
-    <address>
-        <ul class="chip-container">
-            <!-- LinkedIn -->
-            <li class="footer-icon">
-                <a aria-label="LinkedIn Profil von Franziska Leicht" href="https://www.linkedin.com/in/franziskaleicht">
-                    <span aria-hidden="true" class="fab fa-linkedin fa-2x"></span>
-                </a>
-            </li>
-            <!-- GitHub -->
-            <li class="footer-icon">
-                <a aria-label="GitHub Repository von Franziska Leicht"
-                   href="https://github.com/IU-Webprogrammierung/webprogrammierung-Franziska-Leicht">
-                    <span aria-hidden="true" class="fa-brands fa-square-github fa-2x"></span>
-                </a>
-            </li>
-            <!-- Mail -->
-            <li class="footer-icon">
-                <a aria-label="E-Mail an Franziska Leicht senden" href="mailto:leicht.franziska98@gmail.com">
-                    <span aria-hidden="true" class="fas fa-envelope fa-2x"></span>
-                </a>
-            </li>
-        </ul>
-    </address>
-    <div class="sticky-headline">UX Pinnwand</div>
-    <div class="sticky-board">
-        <div class="sticky-note">
-            <div class="type">Buch</div>
-            <div class="cite">„Hooked“</div>
-            <div class="author">Nir Eyal</div>
-        </div>
-        <div class="sticky-note">
-            <div class="type">Zitat</div>
-            <div class="cite">„People don't always do what they say, but they always do what they feel“</div>
-            <div class="author">Susan Weinschenk</div>
-        </div>
-        <div class="sticky-note">
-            <div class="type">Zitat</div>
-            <div class="cite">„Don’t Make Me Think“</div>
-            <div class="author">Steve Krug</div>
-        </div>
-    </div>
-
-    <p>© 2025 Franziska Leicht</p>
-</footer>
+<footer-component></footer-component>
 
 <!-- Scroll to Top Button -->
 <button aria-label="Zum Seitenanfang scrollen" id="scroll-to-top">
     <span aria-hidden="true" class="fa-solid fa-arrow-up"></span>
 </button>
-
-<script src="script.js"></script>
 </body>
 
 </html>
