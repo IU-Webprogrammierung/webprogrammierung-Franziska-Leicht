@@ -596,7 +596,7 @@ p {
         transition: all 1.0s ease;
         opacity: 1;
 
-        height: 260px;  /* or whatever height you want the "image box" to be */
+        height: 260px;
         display: block;
     }
 
@@ -617,7 +617,7 @@ p {
         }
 
         ~ .frontside {
-            opacity: 0.5;
+            opacity: 0.0;
             position: absolute;
             inset: 0;
         }
