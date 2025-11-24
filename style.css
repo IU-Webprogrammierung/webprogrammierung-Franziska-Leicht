@@ -1,8 +1,8 @@
 /*
 Device Sizes
-- desktop size is bigger or equal to 1200px
-- table is smaller than 1200px
-- phone is smaller than 500px
+- desktop size is bigger or equal to 1201px
+- table is smaller or equal than 1200px
+- phone is smaller or equal than 500px
 */
 
 :root {
@@ -464,6 +464,32 @@ p {
 
         .timeline-year {
             color: var(--primary-color);
+        }
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1201px) {
+    .timeline-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+
+        .timeline-list-item {
+            flex: 1 1 0;
+            width: 0;
+            flex-direction: column;
+
+            .timeline-card {
+                width: 100%;
+            }
+
+            .timeline-icon {
+                &::before {
+                    height: 2px;
+                    width: 20%;
+                }
+            }
         }
     }
 }
