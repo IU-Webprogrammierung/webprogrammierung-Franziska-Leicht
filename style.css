@@ -571,11 +571,10 @@ p {
 }
 
 .flipcard {
-    height: 500px;
+    min-height: 540px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     border-radius: 12px;
     background-color: var(--card-background-color);
     padding: 10px;
@@ -586,6 +585,7 @@ p {
         object-fit: cover;
         object-position: center;
         border-radius: 6px;
+        transition: filter 0.2s ease;
 
         &:hover {
             filter: brightness(0.92);
@@ -609,33 +609,36 @@ p {
         align-items: center;
         transition: all 0.3s ease;
         color: var(--primary-color);
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 14px;
+        margin-bottom: 14px;
 
         &:hover {
             color: var(--primary-hover-color);
         }
     }
 
-    .frontside {
-        cursor: pointer;
-        transition: all 1.0s ease;
-        opacity: 1.0;
-
-        height: 260px;
-        display: block;
-        z-index: 1;
-    }
-
-    .backside {
-        z-index: 0;
-        transition: all 1.0s ease;
-        opacity: 0.0;
-        margin-top: -200px;
-        top: 0;
-        left: 0;
-        width: 100%;
+    .flipcard-content {
         height: 100%;
+        position: relative;
+        text-align: center;
+
+        .frontside {
+            cursor: pointer;
+            transition: opacity 1.0s ease;
+            opacity: 1.0;
+            z-index: 1;
+        }
+
+        .backside {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            transition: opacity 1.0s ease;
+            opacity: 0.0;
+            width: 100%;
+        }
     }
 
     input:checked {
@@ -647,28 +650,33 @@ p {
             display: inline;
         }
 
-        ~ .frontside {
-            z-index: 0;
-            opacity: 0.02;
+        ~ .flipcard-content {
+            .frontside {
+                z-index: -1;
+                opacity: 0.02;
+            }
+
+            .backside {
+                z-index: 1;
+                opacity: 1;
+            }
         }
 
-        ~ .backside {
-            z-index: 1;
-            opacity: 1;
-        }
     }
 }
 
 .flipcard-container {
     display: grid;
-    gap: 20px 14px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    justify-items: center;
+    justify-content: center;
 }
 
 /*tablet*/
 @media screen and (max-width: 1200px) {
     .flipcard-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
 }
 
@@ -676,6 +684,6 @@ p {
 /*phone*/
 @media screen and (max-width: 640px) {
     .flipcard-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 }
