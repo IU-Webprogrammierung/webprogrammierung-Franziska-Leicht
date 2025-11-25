@@ -669,7 +669,6 @@ p {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
-    justify-items: center;
     justify-content: center;
 }
 
