@@ -1,8 +1,9 @@
 /*
 Device Sizes
 - desktop size is bigger or equal to 1201px
-- table is smaller or equal than 1200px
-- phone is smaller or equal than 500px
+- big tablet is smaller or equal than 1200px
+- small tablet is smaller or equal than 1000px
+- phone is smaller or equal than 640px
 */
 
 :root {
