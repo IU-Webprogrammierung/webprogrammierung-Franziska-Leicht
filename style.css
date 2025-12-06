@@ -316,8 +316,7 @@ section {
     background-blend-mode: color;
 }
 
-footer {
-    margin-top: 60px;
+#contact, footer {
     background-color: var(--primary-page-background-color);
     padding: 20px;
     text-align: center;
@@ -328,7 +327,7 @@ footer {
     background-position: bottom;
     background-blend-mode: color;
 
-    .footer-icon {
+    .contact-icon {
         display: inline-block;
     }
 
@@ -345,7 +344,6 @@ footer {
     }
 
     p {
-        padding-top: 20px;
         margin: 0;
     }
 }
@@ -542,9 +540,11 @@ p {
     justify-content: start;
     flex-wrap: wrap;
     gap: 16px;
+    padding: 0;
 }
 
 .sticky-note {
+    list-style: none;
     flex: 1 1 250px;
     width: 0;
     border: 2px solid var(--chip-background-color);
@@ -671,6 +671,7 @@ p {
     gap: 20px;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 /*tablet*/
