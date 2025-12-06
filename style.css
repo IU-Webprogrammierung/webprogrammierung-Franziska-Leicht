@@ -566,7 +566,7 @@ p {
         color: var(--text-color-dimmed);
     }
 
-    .author {
+    .writer {
         color: var(--text-color);
     }
 }
