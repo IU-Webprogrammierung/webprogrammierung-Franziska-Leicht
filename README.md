@@ -51,7 +51,7 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 - **CSS Custom Properties (Variablen)** zur globalen Farbanpassung
 - **CSS Nesting** zur modernen Verschachtelung
 - **CSS Animationen** bei Profilbild, Projektkarten, Footer-Icons und Scroll-to-Top Button
-    - **Hero-Bild animiert** (bewegt sich beim Hovern leicht nach oben, wie ein Winken)
+    - **Hero-Bild animiert** (Transition mit ease: bewegt sich beim Hovern leicht nach oben, wie ein Winken)
 - **Hover-Effekte** und **Mauszeiger Zustände** (Pfeil, Hand) für Buttons, Navigation
 - **Scroll-to-Top Button** mit Smooth-Scrolling(`script.js`)
 - **Code Kommentare** bei JavaScript
