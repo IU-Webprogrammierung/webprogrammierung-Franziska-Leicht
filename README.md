@@ -80,7 +80,7 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 - **Repository auf GitHub:** [
   `IU-Webprogrammierung/webprogrammierung-Franziska-Leicht`](https://github.com/IU-Webprogrammierung/webprogrammierung-Franziska-Leicht)
 - **Regelmäßige Commits** zur Nachvollziehbarkeit und englische Commit Messages nach Conventional Commits Standard, über
-  140
+  160
   Commits
 - **2 Git Tags** für die ersten beiden Projektphasen, um Projektabgaben zu markieren
 - **1 Branch** für ein umfangreiches neues Feature (Subpages mit Web Components), aber nicht weiter verfolgt
