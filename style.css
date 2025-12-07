@@ -195,7 +195,7 @@ body {
 
 
 .profile-picture {
-    width: clamp(150px, 15vw, 300px);
+    width: clamp(150px, 15vw, 220px);
     height: auto;
     /* Höhe proportional zur Breite */
     border-radius: 20%;
@@ -382,7 +382,7 @@ section {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 h2 {
@@ -530,7 +530,6 @@ p {
 .sticky-headline {
     margin-top: 50px;
     margin-bottom: 10px;
-    font-size: 24px;
 }
 
 .sticky-board {
