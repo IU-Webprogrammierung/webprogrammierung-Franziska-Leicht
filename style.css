@@ -202,7 +202,6 @@ body {
     /* rundes Bild */
     transition: transform 0.4s ease;
     border-radius: 30% 70% 55% 45% / 30% 30% 70% 70%;
-    filter: saturate(120%) brightness(1.2);
 }
 
 .profile-picture:hover {
