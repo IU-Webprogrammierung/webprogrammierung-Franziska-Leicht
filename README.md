@@ -1,10 +1,10 @@
-# UX Portfolio Website – Franziska Leicht
+# UX Portfolio Website // Franziska Leicht
 
 ## Projektbeschreibung & Ziele
 
 Dieses Projekt entstand im Rahmen des Moduls **Web-Programmierung** (DLBUXPWP01) im Bachelorstudiengang **UX Design** an
 der IU
-Internationale Hochschule. Ziel war die Erstellung einer **Website**, die meine bisherigen Studienprojekte und
+Internationale Hochschule. Ziel war die Erstellung einer **Portfolio-Website**, die meine bisherigen UX Studienprojekte und
 Kenntnisse
 präsentiert und zugleich aktuelle Webstandards, Accessibility-Standards (WCAG/WAI-ARIA) sowie responsive Gestaltung
 berücksichtigt.
@@ -19,7 +19,7 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 3. **Berufserfahrung und Bildung** – Timeline als visuelle Zeitachse
 4. **Kenntnisse (Skills)** – Übersicht zu UX-, Tech- und Soft Skills mit Chips
 5. **Projekte (Portfolio)** – Uni-Praxisprojekte mit Bildern, Text und externen Links zu Prototypen
-6. **Human-Centered-Design Prozess** – Meine Vorgehensweise in 3 Phasen
+6. **Human-Centered-Design Prozess** – Meine UX-Projekt-Vorgehensweise in 3 Phasen
 7. **Kontakt & Inspiration** – Kontaktmöglichkeiten, Social Links und UX Pinnwand zur Inspiration
 
 ## Errungenschaften
@@ -45,9 +45,8 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
   Klick auf Bilder oder "+"-Button erscheint eine Beschreibung des Projekts in Textform und der "+"-Button rotiert durch
   CSS und wird zum "X"-Button (Schließen), das Bild bleibt leicht transparent im Hintergrund sichtbar
 - **Responsive Timeline (sehr aufwendig)**: Horizontal bei Desktop-Ansicht, vertikal bei Smartphone/Tablet-Ansicht
-- **Konsistente UI Components** (Chips, Buttons, Cards, Grid-Items)
 - **Font Awesome** für Icon-Darstellung (lokal im Projekt eingebunden), Icons mit `<div>` anstatt `<i>`
-- Komprimierte Bilder im **WebP Format** (max. 200 KB je Bild)
+- **WebP Format** bei allen Bildern (max. 200 KB je Bild) für optimierte Performance
 - **CSS Custom Properties (Variablen)** zur globalen Farbanpassung
 - **CSS Nesting** zur modernen Verschachtelung
 - **CSS Animationen** bei Profilbild, Projektkarten, Footer-Icons und Scroll-to-Top Button
@@ -89,9 +88,9 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 
 ### Testing und Qualitätssicherung
 
-- **Lighthouse Test**: Best Practices und Accessibility ≥ 90 % 
-  - Letzter Desktop-Test am 07.12.2025 um 1:34 Uhr: 100 Punkte Barrierefreiheit, 96 Punkte Best Practices
-  - Letzter Mobil-Test am 07.12.2025 um 1:37 Uhr: 100 Punkte Barrierefreiheit, 100 Punkte Best Practices
+- **Lighthouse Test**: Best Practices und Accessibility ≥ 90 %
+    - Letzter Desktop-Test am 07.12.2025 um 1:34 Uhr: 100 Punkte Barrierefreiheit, 96 Punkte Best Practices
+    - Letzter Mobil-Test am 07.12.2025 um 1:37 Uhr: 100 Punkte Barrierefreiheit, 100 Punkte Best Practices
 - Prüfung für die **Browser** Safari, Firefox und Chrome: Es wurden keine Fehler festgestellt
     - MacOS Version: Tahoe 26.1 (25B78)
     - Firefox 145.0.1 (aarch64)
@@ -102,37 +101,52 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 
 ### Herausforderungen
 
-- **Toggle Switch Dark Mode**: ich habe einen Toggle Switch mit HTML, CSS und JS für den Dark Mode gebaut, diesen aber
-  wieder verworfen, da ich im Nachhinein gemerkt habe, dass dieser mit meinem Dark Mode Media Query Systemzustand
-  überschreiben würde und es dann für so ein kleines Feature zu komplex wäre. Sinnvoll wäre es zum Beispiel einen Cookie
+- **Responsivität und mehrere Breakpoints**  
+  Die Website umfasst viele Komponenten (Hero-Bereich, Flipcards, Timeline, Cards etc.), die
+  in verschiedenen Viewports unterschiedlich reagieren müssen. Eine Herausforderung war, für Desktop ein großzügiges, luftiges Layout zu gestalten und gleichzeitig auf
+  mobilen Geräten eine kompakte, klare und gut lesbare Darstellung sicherzustellen. Mehrere Breakpoints waren notwendig, weil einzelne Elemente unterschiedlich stark auf Größenänderungen reagieren.
+- **Dark-Mode-Toggle**  
+  Ein eigener Toggle-Switch wurde entwickelt, aber verworfen, da er das systemseitige `prefers-color-scheme`
+  überschrieben hätte und der Aufwand (Cookie-Handling, User-Persistierung) für dieses Projekt unverhältnismäßig gewesen
+  wäre. Sinnvoll wäre es zum Beispiel einen Cookie
   initial mit der Systemauswahl anzulegen. Diesen dann durch eine Auswahl vom User durch den Dark/Light Theme Button zu
-  überschreiben und dann bei Seitenneuladen diesen auszuwerten. Mein
-  Media Query ist aber ausreichend und deswegen braucht es kein Toggle Button.
-- **Web Components** bei Projekt-Subpages: ich habe beispielhaft für eine neue Projekt Subpage in einem extra Branch Web
-  Components für Header mit Navigation, als auch den Footer entwickelt. Die Idee war für weitere Subseiten diese
-  Komponenten wiederverwenden zu können. Die Idee wurde aber nicht weiterverfolgt, da es ein Bruch mit meinem Onepager
-  Konzept wäre und auch Aufwand & Komplexität ungerechtfertigt steigen würden.
-- **Flippable Projekt-Cards**: Design, Funktion und Responsivität waren teilweise sehr schwierig umzusetzen, da eine
-  Seite der Card Bild und eine Text hat. Lösung durch:
-    - CSS-Properties `z-index`, `opacity`
-    - CSS-Grid für Flipcard Container mit Breakpoints
-    - CSS-Flex für Flipcard Inhalt
+  überschreiben und dann bei Seitenneuladen diesen auszuwerten. Der Media-Query-basierte Dark Mode ist ausreichend und
+  barrierefrei.
+
+- **Web Components für Subpages**  
+  Für mögliche Projekt-Unterseiten wurden Header und Footer als Web Components prototypisch entwickelt. Die Idee wurde
+  nicht weiterverfolgt, da sie das Onepager-Konzept brechen und die Komplexität ohne Mehrwert erhöhen würde.
+
+- **Flippable Projekt-Cards**  
+  Die Kombination aus Bild- und Textseite je Card sowie die Anforderungen an Responsivität machten die Umsetzung
+  anspruchsvoll.
+  Gelöst durch:
+    - Einsatz von `z-index` und `opacity`
+    - Verwendung von CSS Grid mit Breakpoints
+    - Flexbox für die innere Struktur
 
 ### Learnings
 
-- **CSS-Möglichkeiten**: Mit CSS ist sehr viel möglich, es muss nicht immer direkt JavaScript oder ein Framework sein.
-  JavaScript wurde nur bei nicht essentiellen Funktionalitäten eingesetzt, damit die Website auch immer gut funktioniert
-  und schnell lädt.
-- **Semantisches HTML** für Barrierefreiheit: Nicht alle Tags sind semantisch, im Projekt habe ich die Bedeutung von
-  Semantik
-  und semantischen HTML Tags für die Barrierefreiheit gelernt
-    - Beispiele: Icons mit `<div>` anstatt `<i>`, semantische Abfolge von H1, H2, H3 etc.
-- **Git Versionierung**: Sehr hilfreich und nützlich für die agile Arbeit an einem größeren Web-Projekt und wenn man
-  etwas
-  verwerfen oder auf einen alten Stand zurücksetzen möchte
-- **Font Awesome**: Die Icons wurden lokal eingebunden. IP-Adresse des Users soll nicht an US-Server weitergegeben
-  werden,
-  um theoretisch DSGVO-konform zu bleiben. Außerdem verbessert sich die Unabhängigkeit zu weiteren Servern.
+- **Responsivität & Breakpoints**  
+  Vertieftes Verständnis für komplexe responsive Layouts und den Umgang mit mehreren Breakpoints über verschiedene
+  Komponenten hinweg.
+
+- **CSS-Potenzial**  
+  Viele Funktionen konnten rein mit CSS umgesetzt werden; JavaScript wurde bewusst nur für nicht-essentielle Features
+  genutzt, um Performance und Stabilität zu sichern.
+
+- **Semantisches HTML**  
+  Gestärktes Bewusstsein für die Bedeutung semantischer HTML-Elemente im Kontext der Barrierefreiheit.
+
+- **Barrierefreiheit (WCAG & ARIA)**  
+  Erweiterte Kenntnisse in zugänglichem Webdesign, inklusive Farbkontraste, Rollen, Alternativtexte und
+  Navigationsstrukturen.
+
+- **Git-Workflow**  
+  Praktische Erfahrung in strukturierter Code Versionierung und branchbasierter Entwicklung.
+
+- **Font Awesome lokal eingebunden**  
+  Keine externen Serveranfragen, dadurch datenschutzfreundlicher (DSGVO) und unabhängig von CDN-Ausfällen.
 
 © 2025 Franziska Leicht – IU Internationale Hochschule | Modul Web-Programmierung
 
