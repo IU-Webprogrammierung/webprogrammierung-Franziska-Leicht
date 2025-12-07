@@ -15,11 +15,12 @@ Die Portfolio-Website ist als **Onepager** konzipiert und folgt einer klaren, li
 Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichbar, die als Sticky Header fixiert ist.
 
 1. **Hero** – Einstieg mit Profilbild, Name, Berufsbezeichnung, Claim und zentralem Call-to-Action Button
-2. **Über mich** – Kurzvorstellung, Motivation, persönliche Einblicke + Timeline – Berufserfahrung und Bildung als
-   visuelle Zeitachse
+2. **Über mich** – Kurzvorstellung, Motivation, persönliche Einblicke
+3. **Berufserfahrung und Bildung** – Timeline als visuelle Zeitachse
 4. **Kenntnisse (Skills)** – Übersicht zu UX-, Tech- und Soft Skills mit Chips
 5. **Projekte (Portfolio)** – Uni-Praxisprojekte mit Bildern, Text und externen Links zu Prototypen
-6. **Kontakt & Inspiration** – Kontaktmöglichkeiten, Social Links und UX Pinnwand zur Inspiration
+6. **Human-Centered-Design Prozess** – Meine Vorgehensweise in 3 Phasen
+7. **Kontakt & Inspiration** – Kontaktmöglichkeiten, Social Links und UX Pinnwand zur Inspiration
 
 ## Errungenschaften
 
@@ -52,7 +53,8 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 - **CSS Animationen** bei Profilbild, Projektkarten, Footer-Icons und Scroll-to-Top Button
     - **Hero-Bild animiert** (bewegt sich beim Hovern leicht nach oben, wie ein Winken)
 - **Hover-Effekte** und **Mauszeiger Zustände** (Pfeil, Hand) für Buttons, Navigation
-- **Scroll-to-Top Button** (`script.js`)
+- **Scroll-to-Top Button** mit Smooth-Scrolling(`script.js`)
+- **Code Kommentare** bei JavaScript
 - **Dark Mode**-Unterstützung über `@media (prefers-color-scheme: dark)`. Website färbt sich somit passend zur
   Geräteeinstellung. Nutzt und überschreibt das eigene Farbsystem über CSS Variablen
 - **Externe Projekt-Links** öffnen sicher in neuen Tabs (`target="_blank"`, `rel="noopener noreferrer"`)
@@ -72,6 +74,7 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 - **Farben mit AA-Kontrastwerten** geprüft (Lighthouse-Test)
 - **Visuell klarer Fokuszustand** durch Hover-Effekte und klare Hierarchie
 - **Buttons mit `role="button"`** für Screenreader-Unterstützung
+- **Screenreader-Test** (Chrome, Firefox) erfolgreich, Inhalte sind barrierefrei zugänglich
 
 ### Git-Workflow
 
@@ -86,8 +89,9 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 
 ### Testing und Qualitätssicherung
 
-- **Lighthouse Test**: Best Practices und Accessibility ≥ 90 % // Letzter Lighthouse Test am 07.12.2025 - 100 Punkte (
-  Best Practices + Accessibility)
+- **Lighthouse Test**: Best Practices und Accessibility ≥ 90 % 
+  - Letzter Desktop-Test am 07.12.2025 um 1:34 Uhr: 100 Punkte Barrierefreiheit, 96 Punkte Best Practices
+  - Letzter Mobil-Test am 07.12.2025 um 1:37 Uhr: 100 Punkte Barrierefreiheit, 100 Punkte Best Practices
 - Prüfung für die **Browser** Safari, Firefox und Chrome: Es wurden keine Fehler festgestellt
     - MacOS Version: Tahoe 26.1 (25B78)
     - Firefox 145.0.1 (aarch64)
