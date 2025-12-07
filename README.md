@@ -14,15 +14,15 @@ berücksichtigt.
 Die Portfolio-Website ist als **Onepager** konzipiert und folgt einer klaren, linearen Struktur mit alternierenden
 Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichbar, die als Sticky Header fixiert ist.
 
-1. **Hero** – Einstieg mit Profilbild, Name, Berufsbezeichnung, Claim und zentralem Call-to-Action Button
+1. **Hero/Startseite** – Einstieg mit Profilbild, Name, Berufsbezeichnung, Claim und zentralem Call-to-Action Button
 2. **Über mich** – Kurzvorstellung, Motivation, persönliche Einblicke
 3. **Berufserfahrung und Bildung** – Timeline als visuelle Zeitachse
-4. **Kenntnisse (Skills)** – Übersicht zu UX-, Tech- und Soft Skills mit Chips
-5. **Projekte (Portfolio)** – Uni-Praxisprojekte mit Bildern, Text und externen Links zu Prototypen
+4. **Kenntnisse** – Übersicht zu UX-, Tech- und Soft Skills mit Chips
+5. **Portfolio** – Uni-Praxisprojekte mit Bildern, Text und externen Links zu Prototypen
 6. **Human-Centered-Design Prozess** – Meine UX-Projekt-Vorgehensweise in 3 Phasen
-7. **Kontakt & Inspiration** – Kontaktmöglichkeiten, Social Links und UX Pinnwand zur Inspiration
+7. **Kontakt** – Kontaktmöglichkeiten, Social Links und UX Pinnwand zur Inspiration
 
-## Errungenschaften
+## Eingesetzte Technologien & Methoden
 
 ### HTML, CSS & JavaScript
 
