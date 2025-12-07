@@ -82,7 +82,7 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 - **Regelmäßige Commits** zur Nachvollziehbarkeit und englische Commit Messages nach Conventional Commits Standard, über
   160
   Commits
-- **2 Git Tags** für die ersten beiden Projektphasen, um Projektabgaben zu markieren
+- **3 Git Tags** für alle 3 Projektphasen, um Projektabgaben zu markieren
 - **1 Branch** für ein umfangreiches neues Feature (Subpages mit Web Components), aber nicht weiter verfolgt
 - **gitignore** Datei, um Systemdateien und IDE Workspace Files nicht versehentlich zu committen
 
