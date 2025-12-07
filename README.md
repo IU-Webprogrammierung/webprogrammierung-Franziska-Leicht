@@ -47,7 +47,7 @@ Hintergründen je Sektion. Alle Inhalte sind über die Hauptnavigation erreichba
 - **Responsive Timeline (sehr aufwendig)**: Horizontal bei Desktop-Ansicht, vertikal bei Smartphone/Tablet-Ansicht
 - **Font Awesome** für Icon-Darstellung (lokal im Projekt eingebunden), Icons mit `<div>` anstatt `<i>`
 - **WebP Format** bei allen Bildern (max. 200 KB je Bild) für optimierte Performance
-- **CSS Custom Properties (Variablen)** zur globalen Farbanpassung
+- **CSS Variablen** zur globalen Farbanpassung
 - **CSS Nesting** zur modernen Verschachtelung
 - **CSS Animationen** bei Profilbild, Projektkarten, Footer-Icons und Scroll-to-Top Button
     - **Hero-Bild animiert** (Transition mit ease: bewegt sich beim Hovern leicht nach oben, wie ein Winken)
