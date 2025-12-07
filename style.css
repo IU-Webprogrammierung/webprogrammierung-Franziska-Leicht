@@ -436,6 +436,13 @@ p {
             padding: 12px;
             height: 210px;
             align-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            > * {
+                margin: 6px;
+            }
         }
 
         .timeline-icon {
